@@ -1,9 +1,9 @@
 from os.path import join, dirname
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import psycopg2
 import os
 
-load_dotenv(join(dirname(__file__), '.env'))
+load_dotenv(find_dotenv())
 
 class PGSql:
 	def __init__(self, tableName):

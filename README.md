@@ -88,7 +88,7 @@ At first, you must, as always, create an object and set data that you need to us
 ```python
 user = users()
 user.username = 'c0nder'
-data = user.select({'username': user.username})
+data = user.selectBy({'username': user.username})
 ```
 
 #### Load object by id
@@ -155,7 +155,7 @@ class schema_name(BaseSchema):
 Example of using:
 
 ```python
-user = schema_name.loadById(1)
+user = schema_name.users.loadById(1)
 ```
 
 That's all!
